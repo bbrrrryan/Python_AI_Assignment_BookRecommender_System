@@ -1,0 +1,78 @@
+Metadata-Version: 2.4
+Name: src
+Version: 0.0.1
+Summary: A small package for Book Recommender System
+Home-page: https://github.com/bryan/Books-Recommender-System-Using-Machine-Learning
+Author: bryan
+Author-email: lowbryan022@gmail.com
+License: MIT
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: streamlit
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scikit-learn
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# Books Recommender System Using Machine Learning
+
+A machine learning-based book recommendation system that suggests books to users based on their preferences. The system utilizes various algorithms to recommend books that are most likely to match the user's reading habits.
+
+## Installation
+
+You can set up the environment and install all dependencies (including `pandas`, `streamlit`, `numpy`, and `scikit-learn`) using either the automated script or manual steps.
+
+### Option 1: Automated Setup (Recommended)
+1. Double-click the **`setup_env.bat`** file in the root of the repository.
+2. This script will automatically create a local virtual environment (`.venv`), install all the correct dependencies, and create a **`run_app.bat`** script.
+3. Once completed, simply double-click **`run_app.bat`** to run the app.
+
+### Option 2: Manual Setup (venv)
+If you prefer setting it up manually via the terminal (Command Prompt/PowerShell):
+1. Navigate to the project folder:
+   ```cmd
+   cd C:/Users/User/Downloads/AI_ass
+   ```
+2. Create a virtual environment:
+   ```cmd
+   python -m venv .venv
+   ```
+3. Activate the virtual environment:
+   - Command Prompt: `.venv\Scripts\activate`
+   - PowerShell: `.\.venv\Scripts\Activate.ps1`
+4. Install requirements:
+   ```cmd
+   pip install -r requirements.txt
+   ```
+5. Run the Streamlit application:
+   ```cmd
+   streamlit run app.py
+   ```
+
+### Option 3: Manual Setup (Anaconda Prompt)
+If you are using Anaconda Prompt with Python 3.12.7:
+1. Navigate to the project directory:
+   ```cmd
+   cd C:/Users/User/Downloads/AI_ass
+   ```
+2. Create and activate a conda environment:
+   ```cmd
+   conda create -n book-recommender python=3.12.7 -y
+   conda activate book-recommender
+   ```
+3. Install dependencies:
+   ```cmd
+   pip install -r requirements.txt
+   ```
+4. Run the Streamlit application:
+   ```cmd
+   streamlit run app.py
+   ```
